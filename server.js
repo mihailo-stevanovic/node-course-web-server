@@ -54,6 +54,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'        
+    });
+});
+
 // /bad  JSON with errorMessage prop
 
 app.get('/bad', (req, res) => {
